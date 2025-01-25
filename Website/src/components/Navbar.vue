@@ -40,7 +40,7 @@
     margin: 0 auto;
     position: fixed;
     top: 0;
-    left: 20%;
+    left: 18%;
     z-index: 1000;
     justify-content: center;
     align-items: center;
