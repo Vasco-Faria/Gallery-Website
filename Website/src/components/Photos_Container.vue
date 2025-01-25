@@ -325,8 +325,24 @@ library.add(faLocationDot, faCalendar,faCheck,faClock);
 
   @media (max-width: 768px) {
   .photos-container {
-    width: 90%;
+    width: 80%;
   }
+
+  .album {
+    width: 90%;
+    padding: 20px 20px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+
+
 }
   </style>
   
