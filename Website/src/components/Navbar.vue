@@ -38,6 +38,10 @@
     display: flex;
     width: 60%;
     margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 20%;
+    z-index: 1000;
     justify-content: center;
     align-items: center;
     height: 15vh;

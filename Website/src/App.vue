@@ -1,19 +1,18 @@
 <template>
   <div :class="themeClass" id="app">
     <Navbar :isDarkMode="isDarkMode" />
-
-    <div>
-      
-    </div>
+    <PhotosContainer :isDarkMode="isDarkMode"/>
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
+import PhotosContainer from "./components/Photos_Container.vue"
 
 export default {
   components: {
     Navbar,
+    PhotosContainer,
   },
   data() {
     return {
