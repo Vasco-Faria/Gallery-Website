@@ -22,22 +22,31 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      # Checkout the repository code
+      - name: Checkout code
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+
+      # Instale as dependências no diretório do projeto Vue.js
+      - name: Install dependencies
+        run: |
+          cd Website # Substitua pelo nome do diretório correto
+          npm install
+
+      # Faça o build do projeto no diretório do Vue.js
+      - name: Build the project
+        run: |
+          cd Website # Substitua pelo nome do diretório correto
+          npm run build
+
+      # Envie os artefatos de build para o GitHub Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: './Website/dist' # Atualize o caminho para o diretório de build
+
+      # Deploy para o GitHub Pages
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
