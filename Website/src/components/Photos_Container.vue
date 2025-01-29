@@ -158,7 +158,7 @@ library.add(faLocationDot, faCalendar,faCheck,faClock);
             distancia:"21,1km",
             tempo:"1:51:10",
             photos: [
-              "/images/MMMM2025/image1.jpeg",
+              "/images/MMMM2025/Image1.jpeg",
             ],
           },
         ],
@@ -261,7 +261,7 @@ library.add(faLocationDot, faCalendar,faCheck,faClock);
   width: 80%;
   max-width: 1000px;
   height: 80vh;
-  background: #fff;
+  background: transparent;
   border-radius: 10px;
   padding: 20px;
   position: relative;
@@ -315,7 +315,7 @@ library.add(faLocationDot, faCalendar,faCheck,faClock);
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: #333;
+  color: white;
   z-index: 1001;
 }
 
@@ -331,7 +331,8 @@ library.add(faLocationDot, faCalendar,faCheck,faClock);
   .album {
     width: 90%;
     padding: 20px 20px;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    justify-content: center;
     color: white;
     border-radius: 50px;
     text-align: center;

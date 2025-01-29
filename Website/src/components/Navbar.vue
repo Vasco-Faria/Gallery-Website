@@ -57,7 +57,7 @@
   
   /* Tema escuro */
   .navbar.dark {
-    background: linear-gradient(to right, #C33764, #1D2671);
+    background: linear-gradient(to right, #A9F1DF, #FFBBBB);
     color: #eee;
   }
 
@@ -68,7 +68,7 @@
   font-family: "Poppins", sans-serif; 
   font-weight: 700;
   letter-spacing: 1px; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
   text-decoration: none; 
 }
 

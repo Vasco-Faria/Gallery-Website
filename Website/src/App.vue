@@ -58,8 +58,8 @@ body{
 
 /* Tema claro */
 .light {
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #333;
+  color: #f0f0f0;
 }
 
 /* Tema escuro */
